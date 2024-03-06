@@ -5,3 +5,25 @@
     box-sizing: border-box;
     font-family: "SF-Pro-Text-Regular";
 }
+.header{
+    background-color: darkgoldenrod;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 60px;
+}
+.header__logo{
+    background-color: red;
+    display: flex;
+    gap: 25px;
+}
+.logo__icono {
+    background-color: green;
+}
+.logo__titulo {
+    background-color: orange;
+}
+.header__menu {
+    background-color: blue;
+}

@@ -11,14 +11,15 @@ body{
     background-position: center;
     background-size: cover;
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
 }
 body svg{
     position: absolute;
-    z-index: 0;
-    width: 100vw;
-    height: 100vh;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
     fill: none;
+    object-fit: fill;
     
 }
 path{
@@ -145,8 +146,61 @@ progress[value]::-moz-progress-bar {
     border-radius: 10em;
     background: var(--color);
 }
+.main__activities{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    background-color: var(--color-ternario);
+    padding: 1.5em .5em;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.activities__service h3,
+.activities__transactions h3{
+    font-family: "SF-Pro-Text-bold";
+    font-size: 1.3em;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.service__cards{
+    display: flex;
+    justify-content: center;
+    overflow-x: scroll;
+    gap: 15px;
+    padding: .5em;
+}
+.service__cards div{
+    flex: 1;
+    max-width: 30%;
+    min-height: 150px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: var(--color-primario);
+    margin-bottom: .8em;
+
+
+}
+.service__cards div i{
+    font-weight: 2em;
+    font-size: 2.5em;
+}
+.transactions__cards{
+    display: flex;
+    flex-direction: column;
+}
+.transactions__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .footer{
     width: 100%;
+    height: 5vh;
     /* background: var(--color-primario); */
     position: fixed;
     bottom: 0;

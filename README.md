@@ -3,4 +3,4 @@
 
 [Iconos](https://boxicons.com/)
 
-[Diseño](https://www.figma.com/community/file/928559061120466831)
+[Diseño](https://www.figma.com/community/helpfile/928559061120466831)

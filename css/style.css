@@ -11,7 +11,11 @@ body{
     background-position: center;
     background-size: cover;
     width: 100vw;
-    height: 120vh;
+    height: 100vh;
+}
+.main {
+    width: 100%;
+    height: 85%;
 }
 body svg{
     position: absolute;
@@ -149,13 +153,15 @@ progress[value]::-moz-progress-bar {
 .main__activities{
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
     background-color: var(--color-ternario);
     padding: 1.5em .5em;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     position: sticky;
+    height: 68%;
+    z-index: 1;
     top: 0;
+    overflow-y: hidden;
 }
 .activities__service h3,
 .activities__transactions h3{
@@ -191,21 +197,48 @@ progress[value]::-moz-progress-bar {
     font-weight: 2em;
     font-size: 2.5em;
 }
+.activities__transactions{
+    overflow: hidden;
+}
 .transactions__cards{
     display: flex;
     flex-direction: column;
+    overflow: scroll;
 }
-.transactions__item{
+.transactions__item, .transactions__item- {
     display: flex;
     align-items: center;
+
+}
+.mid {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin-left: 30px;
+    width: 80%;
+}
+.right {
+    align-items: end;
+    justify-content: center;
+    text-align: right;
+    width: 20%;
+}
+.transactions__item i{
+    color: green;
+}
+.transactions__item- i{
+    color: red;
 }
 .footer{
     width: 100%;
-    height: 5vh;
+    height: 6%;
     /* background: var(--color-primario); */
     position: fixed;
     bottom: 0;
+    z-index: 100;
+
 }
 .footer ul {
     display: flex;
